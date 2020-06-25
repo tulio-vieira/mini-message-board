@@ -1,0 +1,16 @@
+extends head
+block content
+  .post
+    h1 What is a Message Board?
+    p=post
+    hr.divider
+  .forum
+    .forum-title
+      h3 Comments
+      a.button(href='/new') Add Comment
+    .comments
+      each message in messages
+        .comment
+          p.username= message.user
+          p= message.text
+          p.date= message.added

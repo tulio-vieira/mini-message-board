@@ -1,0 +1,12 @@
+extends head
+block content
+    form.comment-form(method='POST' action='/new')
+        label(for='user') Username:
+        br
+        input#username(type='text' name='user' placeholder='Your username...' maxlength="50" required)
+        br
+        label(for='message') Message:
+        br
+        textarea#message(name='text' rows='6' cols='50' placeholder='Your message...' maxlength="300" required)
+        br
+        input.button(type='submit' value='Submit')

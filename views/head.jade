@@ -1,0 +1,17 @@
+doctype html
+head
+  link(rel='icon' href='/images/message.svg')
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Mini Message Board
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='/stylesheets/styles.css')
+.nav
+  .list
+    a.home(href='/')
+      img.logo(src='/images/message.svg' alt='sf')
+      p Mini Message Board
+    a(href='/about') About
+    a(href='/contact-me') Contact me
+.container
+  block content

@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  line-height: 1.6em;
+}
+
+.container {
+  margin: 100px 20%;
+}
+
+/* nav bar */
+.nav{
+  top: 0;
+  position: fixed;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav .list {
+  display: flex;
+  align-content: center;
+  width: 70%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav .list a {
+  padding: 5px 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav .list a:hover {
+  background-color: #111;
+}
+
+
+/* logo  and home*/
+
+.nav .list .home {
+  background-color: #3122b9;
+  margin-right: auto;
+}
+
+.logo {
+  width: 45px;
+  margin-right: 15px;
+}
+
+.nav .list .home:hover {
+  background-color: #1d1566;
+}
+
+/* post */
+
+.divider {
+  border:none;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  height: 25px;
+  box-shadow: 0 10px 10px -10px rgb(126, 126, 126);
+}
+
+/* comment section */
+
+.forum-title {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.forum-title h3 {
+  margin-right: auto;
+}
+
+.comment * {
+  margin: 5px 0px;
+  word-wrap: break-word;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.date {
+  font-style: italic;
+  font-size: 0.8em;
+  margin-left: 30px;
+}
+
+.comment-form #username, textarea {
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+.comment-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* button */
+.button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 7px 24px;
+  border: 2px solid #4CAF50; /* Green */
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 2px;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  cursor: pointer	;
+  background-color: white;
+  color: black;
+}
